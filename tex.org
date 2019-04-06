@@ -1,0 +1,105 @@
+#+STARTUP: latexpreview
+* TeX examples
+\displaystyle changes the element rendering from inline to proper math equation caligraphy.
+
+$\displaystyle L(f,P)=\sum_{i=0}^{n-1} inf_{t\in[x_i,x_{i+1}]}f(t)(x_{i+1}-x_{i})$,
+
+\begin{equation}
+x=\sqrt{b}
+\end{equation}
+
+If $a^2=b$ and \( b=2 \), then the solution must be
+either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
+
+* Combine two symbols
+If there is no symbol found, but it can be constructed from several others:
+
+Like: \twoheadrightarrow \rightarrowtail ->
+$\newcommand*{\twoheadrightarrowtail}{\mathrel{\rightarrowtail\kern-1.9ex\twoheadrightarrow}} A \twoheadrightarrowtail B$
+
+Source: https://stackoverflow.com/questions/6625121/how-to-add-special-character-in-latex
+* Symbols
+For everything see: 
+#+begin_src elisp
+(org-entities-help)
+#+end_src
+
+Sources:
+https://www.caam.rice.edu/~heinken/latex/symbols.pdf
+https://en.wikipedia.org/wiki/List_of_mathematical_symbols#Basic_symbols
+https://www.rpi.edu/dept/arc/training/latex/LaTeX_symbols.pdf
+http://tug.ctan.org/info/symbols/comprehensive/symbols-a4.pdf
+
+Basic symbols:
+| Symbol                  | Notation          | Name           |
+|-------------------------+-------------------+----------------|
+| $$ \pm $$               | \pm               | plus-minus     |
+| $$ \times $$            | \times            | vector product |
+| $$ \cdot $$             | \cdot             | scalar product |
+| $$ \div $$              | \div              | division       |
+| $$ \circ $$             |                   |                |
+| $$ \diamond \Diamond $$ | \diamond \Diamond |                |
+
+Equivalence symbols:
+| Symbol                                     | Notation                             | Meaning               | Name                 |
+|--------------------------------------------+--------------------------------------+-----------------------+----------------------|
+| $$ \ne $$                                  | \ne                                  | inequality            | inequality           |
+| $$ \approx $$                              | \approx                              | approximation         | approximately        |
+| $$ \cong $$                                | \cong                                | isomorphic, congruent | congruence           |
+| $$ \equiv $$                               | \equiv                               | equivalence           | congruence relation  |
+| $$ \sim $$                                 | \sim                                 | similarity            | similar              |
+| $$ \Leftrightarrow \leftrightarrow \iff $$ | \Leftrightarrow \leftrightarrow \iff | only both true        | material equivalence |
+| $$ := $$                                   | :=                                   | assignment            | assignment           |
+|                                            |                                      |                       |                      |
+
+Comparison:
+| Symbol    | Notation | Meaning                          | Name |
+|--------------------------------------------+--------------------------------------+-----------------------+----------------------|
+| $$ \ll $$ | \ll      | much less then, always less then |      |
+| $$ \gg $$ | \gg      | much more then, always more then |      |
+| $$ \le $$ | \le      |                                  |      |
+| $$ \ge $$ | \ge      |                                  |      |
+|           |          |                                  |      |
+
+Arrow:
+| Symbol           | Notation   | Meaning                                    | Name |
+|------------------+------------+--------------------------------------------+------|
+| $$ \to $$        | \to        |                                            |      |
+| $$ \leftarrow $$ | \leftarrow |                                            |      |
+| $$ \mapsto $$    | \mapsto    | $$ f: a ↦ b $$ function f maps /a/ to /b/. |      |
+
+Type theory:
+| Symbol       | Notation | Meaning | Name |
+|--------------+----------+---------+------|
+| $$ <: $$   | <:       | subtype |      |
+| $$ <\cdot $$ | <\cdot   | covers  |      |
+
+| Symbol                | Notation        | Name             |
+|-----------------------+-----------------+------------------|
+| $$ \sqrt{x} $$        | \sqrt{x}        | square root      |
+| $$ \sum $$            | \sum            | summation        |
+| $$ \int_{a}^{b}{x} $$ | \int_{a}^{b}{x} | integral         |
+| $$ \oint $$           | \oint           | contour integral |
+|                       |                 |                  |
+
+Logic:
+| Symbol           | Notation   | Meaning                                                  | Name                 |
+|------------------+------------+----------------------------------------------------------+----------------------|
+| $$ \therefore $$ | \therefore | logical consequence                                      | therefore            |
+| $$ \because $$   | \because   | sometimes used in proofs before reasoning                | because              |
+| $$ \vdash $$     | \vdash     | syntactic consequence (from x it is possible to proof y) | turnstile, inference |
+| $$ \dashv $$     | \dashv     | syntactic consequence (from y it is possible to proof x) | turnstile, inference |
+| $$ \vDash $$     | \vDash     | semantic consequence (from x y is true) | double turnstile     |
+|                  |            |                                                          |                      |
+
+Sets:
+| Symbol                  | Notation          | Meaning | Name |
+|-------------------------+-------------------+---------+------|
+| $$ \supset \supseteq $$ | \supset \supseteq |         |      |
+| $$ \subset \subseteq $$ | \subset \subseteq |         |      |
+| $$ \Subset $$           | \Subset           |         |      |
+* Arrows with text text above or below
+Subscript, superscript.
+
+\xrightarrow[world]{hello}
+$$ \xrightarrow[world]{hello} $$
