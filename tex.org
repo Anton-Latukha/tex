@@ -1,4 +1,4 @@
-#+STARTUP: latexpreview
+#+startup: latexpreview
 * TeX examples
 \displaystyle changes the element rendering from inline to proper math equation caligraphy.
 
