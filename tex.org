@@ -103,3 +103,26 @@ Subscript, superscript.
 
 \xrightarrow[world]{hello}
 $$ \xrightarrow[world]{hello} $$
+* Space, spacing in LaTeX formulas
+
+| LaTeX code | Example      | Description                                    |
+|------------+--------------+------------------------------------------------|
+| \!         | $$ l \! l $$ | -3/18 of \quad (= -3 mu)                       |
+|            | $$ l l $$ |                                                |
+| \,         | $$ l \, l $$ | 3/18 of \quad (= 3 mu)                         |
+| \:         | $$ l \: l $$ | 4/18 of \quad (= 4 mu)                         |
+| \;         | $$ l \; l $$ | 5/18 of \quad (= 5 mu)                         |
+| {\ }       | $$ l \ l $$ | equivalent of space in normal text             |
+| \quad      | $$ l \quad l $$ | space equal to the current font size (= 18 mu) |
+| \qquad     | $$ l \qquad l $$ | twice of \quad (= 36 mu)                       |
+
+\begin{align*}
+f(x) =& x^2\! +3x\! +2 \\
+f(x) =& x^2+3x+2 \\
+f(x) =& x^2\, +3x\, +2 \\
+f(x) =& x^2\: +3x\: +2 \\
+f(x) =& x^2\; +3x\; +2 \\
+f(x) =& x^2\ +3x\ +2 \\
+f(x) =& x^2\quad +3x\quad +2 \\
+f(x) =& x^2\qquad +3x\qquad +2
+\end{align*}
