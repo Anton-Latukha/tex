@@ -105,16 +105,17 @@ Subscript, superscript.
 $$ \xrightarrow[world]{hello} $$
 * Space, spacing in LaTeX formulas
 
-| LaTeX code | Example      | Description                                    |
-|------------+--------------+------------------------------------------------|
-| \!         | $$ l \! l $$ | -3/18 of \quad (= -3 mu)                       |
-|            | $$ l l $$ |                                                |
-| \,         | $$ l \, l $$ | 3/18 of \quad (= 3 mu)                         |
-| \:         | $$ l \: l $$ | 4/18 of \quad (= 4 mu)                         |
-| \;         | $$ l \; l $$ | 5/18 of \quad (= 5 mu)                         |
-| {\ }       | $$ l \ l $$ | equivalent of space in normal text             |
-| \quad      | $$ l \quad l $$ | space equal to the current font size (= 18 mu) |
-| \qquad     | $$ l \qquad l $$ | twice of \quad (= 36 mu)                       |
+| Code   | Description                                    | Example          |
+|        | <48>                                           | <19>             |
+|--------+------------------------------------------------+------------------|
+| \!     | -3/18 of \quad (= -3 mu)                       | $$ l \! l $$     |
+|        |                                                | $$ l l $$        |
+| \,     | 3/18 of \quad (= 3 mu)                         | $$ l \, l $$     |
+| \:     | 4/18 of \quad (= 4 mu)                         | $$ l \: l $$     |
+| \;     | 5/18 of \quad (= 5 mu)                         | $$ l \; l $$     |
+| {\ }   | equivalent of space in normal text             | $$ l \ l $$      |
+| \quad  | space equal to the current font size (= 18 mu) | $$ l \quad l $$  |
+| \qquad | twice of \quad (= 36 mu)                       | $$ l \qquad l $$ |
 
 \begin{align*}
 f(x) =& x^2\! +3x\! +2 \\
