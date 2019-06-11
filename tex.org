@@ -138,3 +138,13 @@ f(x) =& x^2\qquad +3x\qquad +2
 | \mathfrak{RQSZ} | $$ \mathfrak{RQSZ} $$ |
 | \mathbb{RQSZ}   | $$ \mathbb{RQSZ} $$   |
 
+#+NAME: tab:fonts-additional
+| Code                     | Preview                        |
+|--------------------------+--------------------------------|
+| 3x^2 \in R \subset Q              | $$ 3x^2 \in R \subset Q $$              |
+| \mathnormal{3x^2 \in R \subset Q} | $$ \mathnormal{3x^2 \in R \subset Q} $$ |
+| \mathrm{3x^2 \in R \subset Q}     | $$ \mathrm{3x^2 \in R \subset Q} $$     |
+| \mathit{3x^2 \in R \subset Q}     | $$ \mathit{3x^2 \in R \subset Q} $$     |
+| \mathbf{3x^2 \in R \subset Q}     | $$ \mathbf{3x^2 \in R \subset Q} $$     |
+| \mathsf{3x^2 \in R \subset Q}     | $$ \mathsf{3x^2 \in R \subset Q} $$     |
+| \mathtt{3x^2 \in R \subset Q}     | $$ \mathtt{3x^2 \in R \subset Q} $$     |
