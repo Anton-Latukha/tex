@@ -148,3 +148,9 @@ f(x) =& x^2\qquad +3x\qquad +2
 | \mathbf{3x^2 \in R \subset Q}     | $$ \mathbf{3x^2 \in R \subset Q} $$     |
 | \mathsf{3x^2 \in R \subset Q}     | $$ \mathsf{3x^2 \in R \subset Q} $$     |
 | \mathtt{3x^2 \in R \subset Q}     | $$ \mathtt{3x^2 \in R \subset Q} $$     |
+* Small notes
+** Use \frac for $$ \frac{d}{dx} $$ instead of \over
+** Command for pandoc conversion that supporte Unicode Greek
+#+begin_src fish
+pandoc -f org -t latex -o README.pdf --table-of-contents --toc-depth=6 -H deeplists.tex --pdf-engine=xelatex haskell.org
+#+end_src
