@@ -93,11 +93,11 @@ Logic:
 |                  |            |                                                          |                      |
 
 Sets:
-| Symbol                  | Notation          | Meaning | Name |
-|-------------------------+-------------------+---------+------|
-| $$ \supset \supseteq $$ | \supset \supseteq |         |      |
-| $$ \subset \subseteq $$ | \subset \subseteq |         |      |
-| $$ \Subset $$           | \Subset           |         |      |
+| Symbol            | Notation    | Meaning | Name |
+|-------------------+-------------+---------+------|
+| $$ \supset \supseteq $$ | \supset \supseteq | 1 is > 2 |      |
+| $$ \subset \subseteq $$ | \subset \subseteq | 1 is < 2 |      |
+| $$ \Subset $$     | \Subset     |         |      |
 * Arrows with text text above or below
 Subscript, superscript.
 
