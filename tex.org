@@ -1,8 +1,10 @@
 #+startup: latexpreview
 * TeX examples
+
 \displaystyle changes the element rendering from inline to proper math equation caligraphy.
 
-$\displaystyle L(f,P)=\sum_{i=0}^{n-1} inf_{t\in[x_i,x_{i+1}]}f(t)(x_{i+1}-x_{i})$,
+$$ L(f,P)=\sum_{i=0}^{n-1} inf_{t\in[x_i,x_{i+1}]}f(t)(x_{i+1}-x_{i}) $$,
+$$ \displaystyle L(f,P)=\sum_{i=0}^{n-1} inf_{t\in[x_i,x_{i+1}]}f(t)(x_{i+1}-x_{i}) $$,
 
 \begin{equation}
 x=\sqrt{b}
@@ -12,13 +14,16 @@ If $a^2=b$ and \( b=2 \), then the solution must be
 either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
 
 * Combine two symbols
+
 If there is no symbol found, but it can be constructed from several others:
 
 Like: \twoheadrightarrow \rightarrowtail ->
 $\newcommand*{\twoheadrightarrowtail}{\mathrel{\rightarrowtail\kern-1.9ex\twoheadrightarrow}} A \twoheadrightarrowtail B$
 
 Source: https://stackoverflow.com/questions/6625121/how-to-add-special-character-in-latex
+
 * Symbols
+
 For everything see: 
 #+begin_src elisp
 (org-entities-help)
@@ -98,12 +103,16 @@ Sets:
 | $$ \supset \supseteq $$ | \supset \supseteq | 1 is > 2 |      |
 | $$ \subset \subseteq $$ | \subset \subseteq | 1 is < 2 |      |
 | $$ \Subset $$     | \Subset     |         |      |
+
 * Arrows with text text above or below
+
 Subscript, superscript.
 
 \xrightarrow[world]{hello}
 $$ \xrightarrow[world]{hello} $$
+
 * Space, spacing in LaTeX formulas
+
 #+NAME: tab:spaces
 | Code   | Description                                    | Example          |
 |        | <48>                                           | <19>             |
@@ -130,6 +139,7 @@ f(x) =& x^2\qquad +3x\qquad +2
 \end{align*}
 
 * Math fonts, typefaces
+
 #+NAME: tab:fonts-capitals-only
 | Code       | Preview               |
 |-----------------+-----------------------|
@@ -148,9 +158,11 @@ f(x) =& x^2\qquad +3x\qquad +2
 | \mathbf{3x^2 \in R \subset Q}     | $$ \mathbf{3x^2 \in R \subset Q} $$     |
 | \mathsf{3x^2 \in R \subset Q}     | $$ \mathsf{3x^2 \in R \subset Q} $$     |
 | \mathtt{3x^2 \in R \subset Q}     | $$ \mathtt{3x^2 \in R \subset Q} $$     |
+
 * Small notes
 ** Use \frac for $$ \frac{d}{dx} $$ instead of \over
 ** Command for pandoc conversion that supporte Unicode Greek
+
 #+begin_src fish
 pandoc -f org -t latex -o README.pdf --table-of-contents --toc-depth=6 -H deeplists.tex --pdf-engine=xelatex haskell.org
 #+end_src
