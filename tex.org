@@ -48,12 +48,12 @@ Basic symbols:
 Equivalence symbols:
 | Symbol         | Notation | Meaning               | Name                 |
 |----------------+----------+-----------------------+----------------------|
-| $$ \ne $$        | \ne        | inequality            | inequality           |
-| $$ \approx $$        | \approx        | approximation         | approximately        |
-| $$ \cong $$        | \cong        | isomorphic, congruent | congruence           |
-| $$ \equiv $$        | \equiv        | equivalence           | congruence relation  |
-| $$ \sim $$        | \sim        | similarity            | similar              |
-| $$ \Leftrightarrow \leftrightarrow \iff $$ | \Leftrightarrow \leftrightarrow \iff | only both true        | material equivalence |
+| $$ \ne $$        | \ ne       | inequality            | inequality           |
+| $$ \sim $$        | \ sim       | similarity            | similar              |
+| $$ \approx $$        | \ approx       | approximation         | approximately        |
+| $$ \cong $$        | \ cong       | isomorphic, congruent | congruence           |
+| $$ \equiv $$        | \ equiv       | equivalence           | congruence relation  |
+| $$ \Leftrightarrow \leftrightarrow \iff $$ | \ Leftrightarrow \leftrightarrow \iff | only both true        | material equivalence |
 | $$ := $$       | :=       | assignment            | assignment           |
 |                |          |                       |                      |
 
@@ -166,3 +166,13 @@ f(x) =& x^2\qquad +3x\qquad +2
 #+begin_src fish
 pandoc -f org -t latex -o README.pdf --table-of-contents --toc-depth=6 -H deeplists.tex --pdf-engine=xelatex haskell.org
 #+end_src
+* Our system of symbols
+
+
+| Symbol | Notation | Meaing                                  |
+|--------+----------+-----------------------------------------|
+| \equiv      | \ equiv  | Are the same symantic object            |
+| =      | =        | Are equal, have the same value          |
+| \tilde      | \ tilde  | Are equivalent under current conditions |
+| \approx  | \ approx |                                         |
+
