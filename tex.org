@@ -3,15 +3,15 @@
 
 \displaystyle changes the element rendering from inline to proper math equation caligraphy.
 
-$$ L(f,P)=\sum_{i=0}^{n-1} inf_{t\in[x_i,x_{i+1}]}f(t)(x_{i+1}-x_{i}) $$,
-$$ \displaystyle L(f,P)=\sum_{i=0}^{n-1} inf_{t\in[x_i,x_{i+1}]}f(t)(x_{i+1}-x_{i}) $$,
+\( L(f,P)=\sum_{i=0}^{n-1} inf_{t\in[x_i,x_{i+1}]}f(t)(x_{i+1}-x_{i}) \),
+\( \displaystyle L(f,P)=\sum_{i=0}^{n-1} inf_{t\in[x_i,x_{i+1}]}f(t)(x_{i+1}-x_{i}) \),
 
 \begin{equation}
 x=\sqrt{b}
 \end{equation}
 
 If $a^2=b$ and \( b=2 \), then the solution must be
-either $$ a=+\sqrt{2} $$ or \[ a=-\sqrt{2} \].
+either \( a=+\sqrt{2} \) or \[ a=-\sqrt{2} \].
 
 * Combine two symbols
 
@@ -38,78 +38,78 @@ http://tug.ctan.org/info/symbols/comprehensive/symbols-a4.pdf
 Basic symbols:
 | Symbol    | Notation | Name           |
 |-----------+----------+----------------|
-| $$ \pm $$   | \pm        | plus-minus     |
-| $$ \times $$   | \times        | vector product |
-| $$ \cdot $$   | \cdot        | scalar product |
-| $$ \div $$   | \div        | division       |
-| $$ \circ $$   |          |                |
-| $$ \diamond \Diamond $$ | \diamond \Diamond      |                |
+| \( \pm \)   | \pm        | plus-minus     |
+| \( \times \)   | \times        | vector product |
+| \( \cdot \)   | \cdot        | scalar product |
+| \( \div \)   | \div        | division       |
+| \( \circ \)   |          |                |
+| \( \diamond \Diamond \) | \diamond \Diamond      |                |
 
 Equivalence symbols:
 | Symbol         | Notation | Meaning               | Name                 |
 |----------------+----------+-----------------------+----------------------|
-| $$ \ne $$        | \ ne       | inequality            | inequality           |
-| $$ \sim $$        | \ sim       | similarity            | similar              |
-| $$ \approx $$        | \ approx       | approximation         | approximately        |
-| $$ \cong $$        | \ cong       | isomorphic, congruent | congruence           |
-| $$ \equiv $$        | \ equiv       | equivalence           | congruence relation  |
-| $$ \Leftrightarrow \leftrightarrow \iff $$ | \ Leftrightarrow \leftrightarrow \iff | only both true        | material equivalence |
-| $$ := $$       | :=       | assignment            | assignment           |
+| \( \ne \)        | \ ne       | inequality            | inequality           |
+| \( \sim \)        | \ sim       | similarity            | similar              |
+| \( \approx \)        | \ approx       | approximation         | approximately        |
+| \( \cong \)        | \ cong       | isomorphic, congruent | congruence           |
+| \( \equiv \)        | \ equiv       | equivalence           | congruence relation  |
+| \( \Leftrightarrow \leftrightarrow \iff \) | \ Leftrightarrow \leftrightarrow \iff | only both true        | material equivalence |
+| \( := \)       | :=       | assignment            | assignment           |
 |                |          |                       |                      |
 
 Comparison:
 | Symbol    | Notation | Meaning                          | Name |
 |--------------------------------------------+--------------------------------------+-----------------------+----------------------|
-| $$ \ll $$ | \ll      | much less then, always less then |      |
-| $$ \gg $$ | \gg      | much more then, always more then |      |
-| $$ \le $$ | \le      |                                  |      |
-| $$ \ge $$ | \ge      |                                  |      |
+| \( \ll \) | \ll      | much less then, always less then |      |
+| \( \gg \) | \gg      | much more then, always more then |      |
+| \( \le \) | \le      |                                  |      |
+| \( \ge \) | \ge      |                                  |      |
 |           |          |                                  |      |
 
 Arrow:
 | Symbol        | Notation | Meaning                                | Name |
 |---------------+----------+----------------------------------------+------|
-| $$ \to $$       | \to        |                                        |      |
-| $$ \leftarrow $$       | \leftarrow        |                                        |      |
-| $$ \mapsto $$ | \mapsto  | $$ f: a ↦ b $$ function f maps /a/ to /b/. |      |
+| \( \to \)       | \to        |                                        |      |
+| \( \leftarrow \)       | \leftarrow        |                                        |      |
+| \( \mapsto \) | \mapsto  | \( f: a ↦ b \) function f maps /a/ to /b/. |      |
 
 Type theory:
 | Symbol       | Notation | Meaning | Name |
 |--------------+----------+---------+------|
-| $$ <: $$   | <:       | subtype |      |
-| $$ <\cdot $$ | <\cdot   | covers  |      |
+| \( <: \)   | <:       | subtype |      |
+| \( <\cdot \) | <\cdot   | covers  |      |
 
 | Symbol                | Notation        | Name             |
 |-----------------------+-----------------+------------------|
-| $$ \sqrt{x} $$        | \sqrt{x}        | square root      |
-| $$ \sum $$            | \sum            | summation        |
-| $$ \int_{a}^{b}{x} $$ | \int_{a}^{b}{x} | integral         |
-| $$ \oint $$           | \oint           | contour integral |
+| \( \sqrt{x} \)        | \sqrt{x}        | square root      |
+| \( \sum \)            | \sum            | summation        |
+| \( \int_{a}^{b}{x} \) | \int_{a}^{b}{x} | integral         |
+| \( \oint \)           | \oint           | contour integral |
 |                       |                 |                  |
 
 Logic:
 | Symbol           | Notation   | Meaning                                                  | Name                 |
 |------------------+------------+----------------------------------------------------------+----------------------|
-| $$ \therefore $$ | \therefore | logical consequence                                      | therefore            |
-| $$ \because $$   | \because   | sometimes used in proofs before reasoning                | because              |
-| $$ \vdash $$     | \vdash     | syntactic consequence (from x it is possible to proof y) | turnstile, inference |
-| $$ \dashv $$     | \dashv     | syntactic consequence (from y it is possible to proof x) | turnstile, inference |
-| $$ \vDash $$     | \vDash     | semantic consequence (from x y is true) | double turnstile     |
+| \( \therefore \) | \therefore | logical consequence                                      | therefore            |
+| \( \because \)   | \because   | sometimes used in proofs before reasoning                | because              |
+| \( \vdash \)     | \vdash     | syntactic consequence (from x it is possible to proof y) | turnstile, inference |
+| \( \dashv \)     | \dashv     | syntactic consequence (from y it is possible to proof x) | turnstile, inference |
+| \( \vDash \)     | \vDash     | semantic consequence (from x y is true) | double turnstile     |
 |                  |            |                                                          |                      |
 
 Sets:
 | Symbol            | Notation    | Meaning | Name |
 |-------------------+-------------+---------+------|
-| $$ \supset \supseteq $$ | \supset \supseteq | 1 is > 2 |      |
-| $$ \subset \subseteq $$ | \subset \subseteq | 1 is < 2 |      |
-| $$ \Subset $$     | \Subset     |         |      |
+| \( \supset \supseteq \) | \supset \supseteq | 1 is > 2 |      |
+| \( \subset \subseteq \) | \subset \subseteq | 1 is < 2 |      |
+| \( \Subset \)     | \Subset     |         |      |
 
 * Arrows with text text above or below
 
 Subscript, superscript.
 
 \xrightarrow[world]{hello}
-$$ \xrightarrow[world]{hello} $$
+\( \xrightarrow[world]{hello} \)
 
 * Space, spacing in LaTeX formulas
 
@@ -117,14 +117,14 @@ $$ \xrightarrow[world]{hello} $$
 | Code   | Description                                    | Example          |
 |        | <48>                                           | <19>             |
 |--------+------------------------------------------------+------------------|
-| \!     | -3/18 of \quad (= -3 mu)                       | $$ l \! l $$     |
-|        |                                                | $$ l l $$        |
-| \,     | 3/18 of \quad (= 3 mu)                         | $$ l \, l $$     |
-| \:     | 4/18 of \quad (= 4 mu)                         | $$ l \: l $$     |
-| \;     | 5/18 of \quad (= 5 mu)                         | $$ l \; l $$     |
-| {\ }   | equivalent of space in normal text             | $$ l \ l $$      |
-| \quad  | space equal to the current font size (= 18 mu) | $$ l \quad l $$  |
-| \qquad | twice of \quad (= 36 mu)                       | $$ l \qquad l $$ |
+| \!     | -3/18 of \quad (= -3 mu)                       | \( l \! l \)     |
+|        |                                                | \( l l \)        |
+| \,     | 3/18 of \quad (= 3 mu)                         | \( l \, l \)     |
+| \:     | 4/18 of \quad (= 4 mu)                         | \( l \: l \)     |
+| \;     | 5/18 of \quad (= 5 mu)                         | \( l \; l \)     |
+| {\ }   | equivalent of space in normal text             | \( l \ l \)      |
+| \quad  | space equal to the current font size (= 18 mu) | \( l \quad l \)  |
+| \qquad | twice of \quad (= 36 mu)                       | \( l \qquad l \) |
 
 More examples:
 \begin{align*}
@@ -143,24 +143,24 @@ f(x) =& x^2\qquad +3x\qquad +2
 #+NAME: tab:fonts-capitals-only
 | Code       | Preview               |
 |-----------------+-----------------------|
-| RQSZ            | $$ RQSZ $$            |
-| \mathcal{RQSZ}  | $$ \mathcal{RQSZ} $$  |
-| \mathfrak{RQSZ} | $$ \mathfrak{RQSZ} $$ |
-| \mathbb{RQSZ}   | $$ \mathbb{RQSZ} $$   |
+| RQSZ            | \( RQSZ \)            |
+| \mathcal{RQSZ}  | \( \mathcal{RQSZ} \)  |
+| \mathfrak{RQSZ} | \( \mathfrak{RQSZ} \) |
+| \mathbb{RQSZ}   | \( \mathbb{RQSZ} \)   |
 
 #+NAME: tab:fonts-additional
 | Code                     | Preview                        |
 |--------------------------+--------------------------------|
-| 3x^2 \in R \subset Q              | $$ 3x^2 \in R \subset Q $$              |
-| \mathnormal{3x^2 \in R \subset Q} | $$ \mathnormal{3x^2 \in R \subset Q} $$ |
-| \mathrm{3x^2 \in R \subset Q}     | $$ \mathrm{3x^2 \in R \subset Q} $$     |
-| \mathit{3x^2 \in R \subset Q}     | $$ \mathit{3x^2 \in R \subset Q} $$     |
-| \mathbf{3x^2 \in R \subset Q}     | $$ \mathbf{3x^2 \in R \subset Q} $$     |
-| \mathsf{3x^2 \in R \subset Q}     | $$ \mathsf{3x^2 \in R \subset Q} $$     |
-| \mathtt{3x^2 \in R \subset Q}     | $$ \mathtt{3x^2 \in R \subset Q} $$     |
+| 3x^2 \in R \subset Q              | \( 3x^2 \in R \subset Q \)              |
+| \mathnormal{3x^2 \in R \subset Q} | \( \mathnormal{3x^2 \in R \subset Q} \) |
+| \mathrm{3x^2 \in R \subset Q}     | \( \mathrm{3x^2 \in R \subset Q} \)     |
+| \mathit{3x^2 \in R \subset Q}     | \( \mathit{3x^2 \in R \subset Q} \)     |
+| \mathbf{3x^2 \in R \subset Q}     | \( \mathbf{3x^2 \in R \subset Q} \)     |
+| \mathsf{3x^2 \in R \subset Q}     | \( \mathsf{3x^2 \in R \subset Q} \)     |
+| \mathtt{3x^2 \in R \subset Q}     | \( \mathtt{3x^2 \in R \subset Q} \)     |
 
 * Small notes
-** Use \frac for $$ \frac{d}{dx} $$ instead of \over
+** Use \frac for \( \frac{d}{dx} \) instead of \over
 ** Command for pandoc conversion that supporte Unicode Greek
 
 #+begin_src fish
@@ -176,3 +176,8 @@ pandoc -f org -t latex -o README.pdf --table-of-contents --toc-depth=6 -H deepli
 | \tilde      | \ tilde  | Are equivalent under current conditions |
 | \approx  | \ approx |                                         |
 
+* Migrate $ to (
+
+#+begin_src fish
+sed ':a $!{ N; ba }; s|\$\$\([^$$]*\)\$\$|\\\(\1\\\)|g' old.org >> new.org
+#+end_src
