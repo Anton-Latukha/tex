@@ -166,6 +166,7 @@ f(x) =& x^2\qquad +3x\qquad +2
 #+begin_src fish
 pandoc -f org -t latex -o README.pdf --table-of-contents --toc-depth=6 -H deeplists.tex --pdf-engine=xelatex haskell.org
 #+end_src
+
 * Our system of symbols
 
 
@@ -181,3 +182,7 @@ pandoc -f org -t latex -o README.pdf --table-of-contents --toc-depth=6 -H deepli
 #+begin_src fish
 sed ':a $!{ N; ba }; s|\$\$\([^$$]*\)\$\$|\\\(\1\\\)|g' old.org >> new.org
 #+end_src
+
+* Web WUSIWUG editor Matcha that exports to LaTeX
+
+https://www.mathcha.io/editor
