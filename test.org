@@ -17,6 +17,7 @@
 #+latex_header: \geometry{bottom=28mm}
 #+latex_header: \setcounter{secnumdepth}{100}
 #+latex_header: \setcounter{tocdepth}{100}
+#+latex_header: \fancyheadoffset{0mm}    % Offset for header
 
 \begin{tikzcd}[row sep=scriptsize,column sep=scriptsize]
   & \lambda \omega \arrow[rr] \arrow[from=dd] & & \lambda C \\
