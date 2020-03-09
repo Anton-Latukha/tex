@@ -22,6 +22,7 @@
 #+latex_header: \setbox\FHline=\hbox{\hsize=\paperwidth%
 #+latex_header:   \hspace*{0mm}%
 #+latex_header:   \rule{\textwidth}{\headrulewidth}\hspace*{0mm}%
+#+latex_header: }
 
 \begin{tikzcd}[row sep=scriptsize,column sep=scriptsize]
   & \lambda \omega \arrow[rr] \arrow[from=dd] & & \lambda C \\
