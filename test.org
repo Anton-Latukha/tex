@@ -1,3 +1,4 @@
+#+startup: latexpreview
 
 \begin{tikzcd}[row sep=scriptsize,column sep=scriptsize]
   & \lambda \omega \arrow[rr] \arrow[from=dd] & & \lambda C \\
