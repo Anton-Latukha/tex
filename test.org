@@ -11,6 +11,7 @@
 #+latex_header: \pagestyle{headings,chapters,sections,subsections}    % Add complex heading
 #+latex_header: \setlength\marginparwidth{0mm}
 #+latex_header: \setlength\textwidth{455pt}
+#+latex_header: \setlength\textheight{661pt}    % Text height on the page, value was experimentally found by me
 
 \begin{tikzcd}[row sep=scriptsize,column sep=scriptsize]
   & \lambda \omega \arrow[rr] \arrow[from=dd] & & \lambda C \\
