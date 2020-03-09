@@ -16,6 +16,7 @@
 #+latex_header: \setlength\footskip{0mm}
 #+latex_header: \geometry{bottom=28mm}
 #+latex_header: \setcounter{secnumdepth}{100}
+#+latex_header: \setcounter{tocdepth}{100}
 
 \begin{tikzcd}[row sep=scriptsize,column sep=scriptsize]
   & \lambda \omega \arrow[rr] \arrow[from=dd] & & \lambda C \\
