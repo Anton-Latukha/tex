@@ -23,6 +23,7 @@
 #+latex_header:   \hspace*{0mm}%
 #+latex_header:   \rule{\textwidth}{\headrulewidth}\hspace*{0mm}%
 #+latex_header: }
+#+latex_header: \renewcommand\headrule{\vskip-.7\baselineskip\copy\FHline}    % Set rule for header line box
 
 \begin{tikzcd}[row sep=scriptsize,column sep=scriptsize]
   & \lambda \omega \arrow[rr] \arrow[from=dd] & & \lambda C \\
