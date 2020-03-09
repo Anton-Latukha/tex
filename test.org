@@ -7,6 +7,7 @@
 #+latex_header: \tolerance=1000
 #+latex_header: \usepackage{fancyhdr}    % Enable fancy page style package
 #+latex_header: \setlength{\headheight}{15.2pt}    % Vertical size of the header box
+#+latex_header: \pagestyle{fancy}    % Enable fancy page style: Documentation: http://mirror.datacenter.by/pub/mirrors/CTAN/macros/latex/contrib/fancyhdr/fancyhdr.pdf
 
 \begin{tikzcd}[row sep=scriptsize,column sep=scriptsize]
   & \lambda \omega \arrow[rr] \arrow[from=dd] & & \lambda C \\
