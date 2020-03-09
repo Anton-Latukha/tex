@@ -1,6 +1,7 @@
 #+startup: latexpreview
 #+startup: entitiespretty
 #+latex_class: book
+#+latex_class_options: [a4paper,14pt,oneside]
 
 \begin{tikzcd}[row sep=scriptsize,column sep=scriptsize]
   & \lambda \omega \arrow[rr] \arrow[from=dd] & & \lambda C \\
