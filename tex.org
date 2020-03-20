@@ -186,3 +186,17 @@ sed ':a $!{ N; ba }; s|\$\$\([^$$]*\)\$\$|\\\(\1\\\)|g' old.org >> new.org
 * Web WUSIWUG editor Matcha that exports to LaTeX
 
 https://www.mathcha.io/editor
+
+* Handling OpenType fonts in TexLive and LuaTex for LaTeX
+
+[[https://wiki.contextgarden.net/Fonts_in_LuaTeX][Source]]
+#+begin_src fish
+# If mtxrun has problem finding the mtx-fonts.lua file, it may be necessary to regenerate ConTeXt's file database:
+context --generate
+mtxrun --script fonts --reload
+# Querying the font database
+mtxrun --script fonts --list --all | rg -i *
+# See detailed metadata of font file
+otfinfo -f file.otf
+#+end_src
+
