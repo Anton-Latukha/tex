@@ -175,7 +175,7 @@ pandoc -f org -t latex -o README.pdf --table-of-contents --toc-depth=6 -H deepli
 | \equiv      | \ equiv  | Are the same symantic object            |
 | =      | =        | Are equal, have the same value          |
 | \tilde      | \ tilde  | Are equivalent under current conditions |
-| \approx  | \ approx |                                         |
+| \approx      | \ approx |                                         |
 
 * Migrate $ to (
 
