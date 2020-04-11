@@ -141,12 +141,13 @@ f(x) =& x^2\qquad +3x\qquad +2
 * Math fonts, typefaces
 
 #+NAME: tab:fonts-capitals-only
-| Code       | Preview               |
+| Code            | Preview               |
 |-----------------+-----------------------|
 | RQSZ            | \( RQSZ \)            |
 | \mathcal{RQSZ}  | \( \mathcal{RQSZ} \)  |
 | \mathfrak{RQSZ} | \( \mathfrak{RQSZ} \) |
 | \mathbb{RQSZ}   | \( \mathbb{RQSZ} \)   |
+| \mathrm{RQSZ}   | \( \mathrm{RQSZ} \)   |
 
 #+NAME: tab:fonts-additional
 | Code                     | Preview                        |
