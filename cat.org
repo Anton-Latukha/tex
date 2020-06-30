@@ -1,0 +1,177 @@
+# Org-mode options for LaTeX
+#+startup: latexpreview
+#+startup: entitiespretty
+#+options: tags:nil
+#+options: stat:t
+#+options: H:10
+#+options: num:t
+#+options: toc:10
+#+options: p:nil
+# #+options: \n:t
+#+options: -:t
+#+options: e:t
+# #+toc: headlines 10    # Inserts TOC *here
+
+# LaTeX Class
+#+latex_class: book
+#+latex_class_options: [a4paper,14pt,oneside]
+# #+latex_header: \titleclass{\subsubparagraph}{straight}[\subparagraph]    % This tried to add class header subsubhparagraph into the dance
+# #+latex_header: \newcounter{subsubparagraph}
+# #+latex_header: \renewcommand{\subsubparagraph}{\Alph{subsubparagraph}}
+
+# LaTeX to PDF Conversion setup
+#+latex_header: \tolerance=1000
+
+# Graphics setup
+# #+latex_header: \usepackage[ocgcolorlinks]{ocgx2}    % Make links colorful on view and black on print
+#+latex_header: \graphicspath{ {./images/}{./}{/home/pyro/org/haskell/}{/home/pyro/org/haskell/images/} }    % Folder prefix to search images in
+#+latex_header: \usepackage{tikz}
+#+latex_header: \usepackage{tikz-cd}
+
+# Trying to extend numbering and TOC
+#+latex_header: \usepackage{enumitem}
+#+latex_header: \setlistdepth{10}
+#+latex_header: \setcounter{secnumdepth}{10}
+#+latex_header: \setcounter{tocdepth}{10}
+#+latex_header: \renewlist{enumerate}{enumerate}{10}
+#+latex_header: \newlist{enumerate}{enumerate}{10}
+#+latex_header: \setlist[enumerate]{label*=\arabic*.}
+
+# Page layout
+#+latex_header: \usepackage{fancyhdr}    % Enable fancy page style package. Docs: http://mirror.datacenter.by/pub/mirrors/CTAN/macros/latex/contrib/fancyhdr/fancyhdr.pdf
+#+latex_header: \setlength{\headheight}{15.2pt}    % Vertical size of the header box
+#+latex_header: \pagestyle{fancy}    % Enable fancy page style
+#+latex_header: \pagestyle{headings,chapters,sections,subsections}    % Add complex heading
+#+latex_header: \setlength\textwidth{455pt}
+#+latex_header: \setlength\textheight{661pt}    % Text height on the page, value was experimentally found by me
+#+latex_header: \fancyfoot[C]{\thepage}    % Footer center
+#+latex_header: \setlength\footskip{0mm}
+#+latex_header: \fancyheadoffset{0mm}    % Offset for header
+#+latex_header: \usepackage{siunitx}
+#+latex_header: \usepackage{geometry}    % Package aligns the geometry right, probably required by other page offset packages
+#+latex_header: \geometry{bottom=28mm}
+#+latex_header: \newbox\FHline    % Calculate the box for the header
+#+latex_header: \setbox\FHline=\hbox{\hsize=\paperwidth%
+#+latex_header:   \hspace*{0mm}%
+#+latex_header:   \rule{\textwidth}{\headrulewidth}\hspace*{0mm}%
+#+latex_header: }
+#+latex_header: \renewcommand\headrule{\vskip-.7\baselineskip\copy\FHline}    % Set rule for header line box
+#+latex_header: \setlength{\parindent}{0mm}    % Paragraph first line indentation
+
+# Code highlighting
+#+latex_header: \usepackage{fancyvrb}    % Verbatim LaTeX handler&transformer, `minted` requires it.
+#+latex_header: \usepackage{fvextra}    % Official extension to `fancyvrb`, can be used by `minted` in some cases.
+#+latex_header: \usepackage{minted}    % Python3 Pygments code highlighter, requires permission of LaTeX compiler for external tools
+#+latex_header: \usemintedstyle{rainbow_dash}    % Theme that is most close my setup
+
+#+latex_header: \usepackage{caption}
+# #+latex_header: \newcommand{\source}[1]{\caption*{Source: {#1}} }
+#+latex_header: \usepackage{mathtools}
+
+# Font setup
+#+latex_header: \usepackage{fontspec}    % Docs: http://mirror.datacenter.by/pub/mirrors/CTAN/macros/latex/contrib/fontspec/fontspec.pdf
+#+latex_header: \defaultfontfeatures{Ligatures=TeX}    % Should be enablead and autoloaded by default for fonts. Additions provided by luaotfload(i.e., LuaTEX only) to emulate TEX behaviour forASCII input of curly quotes and punctuation. 'NoCommon' did not worked
+#+latex_header: \setmainfont{CMU Serif}    % Computer Modern (mod Unicode extended) Serif {Analog Times New Roman}
+#+latex_header: \setsansfont{CMU Sans Serif}    % {Analog Arial}
+#+latex_header: \setmonofont{CMU Typewriter Text}[Ligatures=ResetAll]    % {Analog Consolas}
+#+latex_header: \newfontfamily\arabicfont[Script=Arabic]{Amiri}    % Good compatible Arabic font from creator of XITS
+#+latex_header: \newfontfamily{\symbolfont}{XITS}    % And load XITS by the way
+#+latex_header: \newcommand{\additional}{{\scriptsize +===}}    % Separator from main to additional meaning.
+#+latex_header: \newcommand{\remember}{\symbolfont{{{\Large ♾}}}}    % Remember this infinitely.
+#+latex_header: \newcommand{\caution}{\symbolfont{{{⚠}}}}    % Be aware.
+#+latex_header: \newcommand{\tricky}{\symbolfont{{{\Large ☡}}}}    % Details that can be hard to follow.
+# #+latex_header: \setmathfont{LatinModernMath-Regular}    % Latin Modern Math loaded by default, but let's show its load explicitly
+
+# Natural transformation arrow
+#+latex_header: \newcommand{\naturalto}{%
+#+latex_header:   \mathrel{\vbox{\offinterlineskip
+#+latex_header:     \mathsurround=0pt
+#+latex_header:     \ialign{\hfil##\hfil\cr
+#+latex_header:       \normalfont\scalebox{1.2}{.}\cr
+#+latex_header: %      \noalign{\kern-.05ex}
+#+latex_header:       $\longrightarrow$\cr}
+#+latex_header:   }}%
+#+latex_header: }
+
+# LuaTeX SVG setup
+#+latex_header: \usepackage{iftex}    % For detection of engines. LuaTeX SVG pkg requires it. Docs: http://mirrors.ctan.org/macros/latex/contrib/iftex/iftex.pdf
+#+latex_header: \usepackage{scrbase}    % For the definition and handling of options in key-value-syntax. LuaTeX SVG pkg requires it.
+#+latex_header: \usepackage{pdftexcmds}    % Extends LuaTeX with unofficial pdfTeX primitives support. LuaTeX SVG pkg requires it.
+#+latex_header: \usepackage{shellesc}    % Primitives to handle shell escape. LuaTeX SVG pkg requires it.
+#+latex_header: \usepackage{ifplatform}    % Controles the access file model depending on the platform. LuaTeX SVG pkg requires it.
+#+latex_header: \usepackage{trimspaces}    % Remove unwanted spaces in the file paths. LuaTeX SVG pkg requires it.
+#+latex_header: \usepackage{transparent}    % Maybe needed for SVGs created by Inkscape.
+#+latex_header: \usepackage{svg}    % Extends LuaTeX with SVG. Docs: http://mirrors.ctan.org/graphics/svg/doc/svg.pdf
+
+# Table packages
+#+latex_header: \usepackage{tabularx}    % Functions for calculation and fixation of the column width in the table. Docs: http://mirror.datacenter.by/pub/mirrors/CTAN/macros/latex/required/tools/tabularx.pdf
+#+latex_header: \usepackage{longtable}    % Support breaking long tables spanning several pages. Docs: http://mirrors.ctan.org/macros/latex/required/tools/longtable.pdf
+#+latex_header: \usepackage{xltabular}    % Provides new table invironment 'xltabular', which is a combination of 'tabularx' and 'longtable'. Docs: http://mirrors.ctan.org/macros/latex/contrib/xltabular/xltabular-doc.pdf
+#+latex_header: \usepackage{tabu}    % UNMAINTAINED (creator dissapeared 2011). Finer treatment and sizing of tables. Environments 'tabu', 'longtabu' Docs: http://mirror.datacenter.by/pub/mirrors/CTAN/macros/latex/contrib/tabu/tabu.pdf
+#+latex_header: \usepackage{booktabs}    % Allows finer typesetting of lines in tables. Docs: http://mirrors.ctan.org/macros/latex/contrib/booktabs/booktabs.pdf
+#+latex_header: \usepackage{colortbl}
+#+latex_header: \usepackage[table]{xcolor}    % Docs: https://mirror.datacenter.by/pub/mirrors/CTAN/macros/latex/contrib/xcolor/xcolor.pdf
+
+# Microtype
+#+latex_header: \usepackage{microtype}    % A great package that enables auto- and manual typeset niceties and tweaking. Docs: http://mirrors.ctan.org/macros/latex/contrib/microtype/microtype.pdf
+#+latex_header: \DisableLigatures[>,<,|,=,-,$]{encoding = *, family = *}    % Specific ligatures to disable in fonts (just a start characters). Mostly Haskell-specific sumbols.
+
+# Language setup
+#+latex_header: \usepackage{polyglossia}    % It is advisable to activate the languages after all packages have been loaded. Docs: http://mirrors.ctan.org/macros/latex/contrib/polyglossia/polyglossia.pdf
+#+latex_header: \setdefaultlanguage[variant=us]{english}
+#+latex_header: \setotherlanguage[variant=ancient]{greek}
+# #+latex_header: \setotherlanguage[variant=classic]{latin}    %  2020-03-14: NOTE: Enabling Lating in Polyglossia v19.04 was going into Haskell source code blocks and breaking on Applicative <*>'s
+#+latex_header: \setotherlanguage{arabic}    % Especially right-to-left languages must be activated after all packages loaded
+
+# #+latex_header: \listfiles    % Debugging: lists the package version information into logs
+
+# HTML setup
+# The theme
+#+setupfile: ./org-html-themes/setup/theme-readtheorg.setup
+# Enable MathJax
+#+html_head: <style type="text/css">div.MathJax_Display{display: inline-block !important; width: auto;}</style>
+# Enable MathJax TiKz
+#+html_head: <link rel="stylesheet" type="text/css" href="http://tikzjax.com/v1/fonts.css">
+#+html_head: <script src="http://tikzjax.com/v1/tikzjax.js"></script>
+# Engine searchable keywords
+#+keywords: Haskell,Org-mode,Org-drill,Category theory,Functor,Applicative,Monad,Learning,Terms,Definitions,Theory,Book,Dictionary,Encyclopedia,Handbook,Philosophy,Philosophy of mathematics
+
+# Setting headers and text typesetting
+#+latex_header: \usepackage[parfill]{parskip}   % Add spacer functions for paragraphs and headers. Docs: https://ctan.math.illinois.edu/macros/latex/contrib/parskip/parskip.pdf
+# #+latex_header: \setlength{\parskip}{1em}    % Typeset of paragraph break
+#+latex_header: \usepackage{titlesec}    % Easy formatting of headers. Docs: http://tug.ctan.org/tex-archive/macros/latex/contrib/titlesec/titlesec.pdf
+#+latex_header: \titleformat{\paragraph}    % Formatting the 'paragraph'
+#+latex_header:   {\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+#+latex_header: \titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}    % {add to left margin}{above}{below}
+#+latex_header: \titleformat{\subparagraph}    % Formatting the 'subparagraph'
+#+latex_header:   {\normalfont\normalsize\bfseries}{\thesubparagraph}{1em}{}
+#+latex_header: \titlespacing*{\subparagraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}    % {add to left margin}{above}{below}
+#+latex_header: \titleformat{\subsubparagraph}    % Formatting the 'subsubparagraph'
+#+latex_header:   {\normalfont\normalsize\bfseries}{\thesubsubparagraph}{1em}{}
+#+latex_header: \titlespacing*{\subsubparagraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}    % {add to left margin}{above}{below}
+#+latex_header: \titleformat{\subsubsubparagraph}    % Formatting the 'subsubsubparagraph'
+#+latex_header:   {\normalfont\normalsize\bfseries}{\thesubsubsubparagraph}{1em}{}
+#+latex_header: \titlespacing*{\subsubsubparagraph}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}    % {add to left margin}{above}{below}
+#+latex_header: \pagestyle{empty}
+#+latex_header: \usepackage{unicode-math}
+#+latex_header: \usepackage\[a-1b\]{pdfx}
+
+
+#+NAME: tab:fonts-capitals-only
+| Code            | Preview               |
+|-----------------+-----------------------|
+| RQSZ            | \( RQSZ \)            |
+| \mathcal{RQSZ}  | \( \mathcal{RQSZ} \)  |
+| \mathfrak{RQSZ} | \( \mathfrak{RQSZ} \) |
+| \mathbb{RQSZ}   | \( \mathbb{RQSZ} \)   |
+
+#+NAME: tab:fonts-additional
+| Code                     | Preview                        |
+|--------------------------+--------------------------------|
+| 3x^2 \in R \subset Q              | \( 3x^2 \in R \subset Q \)              |
+| \mathnormal{3x^2 \in R \subset Q} | \( \mathnormal{3x^2 \in R \subset Q} \) |
+| \mathrm{3x^2 \in R \subset Q}     | \( \mathrm{3x^2 \in R \subset Q} \)     |
+| \mathit{3x^2 \in R \subset Q}     | \( \mathit{3x^2 \in R \subset Q} \)     |
+| \mathbf{3x^2 \in R \subset Q}     | \( \mathbf{3x^2 \in R \subset Q} \)     |
+| \mathsf{3x^2 \in R \subset Q}     | \( \mathsf{3x^2 \in R \subset Q} \)     |
+| \mathtt{3x^2 \in R \subset Q}     | \( \mathtt{3x^2 \in R \subset Q} \)     |
